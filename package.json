@@ -1,7 +1,7 @@
 {
-  "name": "valtechcreative",
+  "name": "coopallc",
   "version": "1.0.0",
-  "description": "New website for ValtechCreative.com",
+  "description": "New website for coopallc.com",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ECWireless/valtechcreative.git"
+    "url": "git+https://github.com/ECWireless/coopallc.git"
   },
   "author": "ECWireless",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ECWireless/valtechcreative/issues"
+    "url": "https://github.com/ECWireless/coopallc/issues"
   },
-  "homepage": "https://github.com/ECWireless/valtechcreative#readme",
+  "homepage": "https://github.com/ECWireless/coopallc#readme",
   "dependencies": {
     "@sendgrid/mail": "^7.2.5",
     "axios": "^0.21.1",

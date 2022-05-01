@@ -28,7 +28,7 @@ const Sidebar = ({
                     <Link href="/">
                         <Flex direction={'column'} onClick={onSelctOption.bind(this, '/')}>
                             <P3 style={{letterSpacing: '1px'}} uppercase color={colors.yellow}>
-                                Valtech Creative
+                                Coopa LLC
                             </P3>
                         </Flex>
                     </Link>

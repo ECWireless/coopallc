@@ -17,7 +17,7 @@ const Tools = () => {
                         <H1 align={'center'}>What We Use</H1>
                         <Box marginTop={50} paddingLeft={100} paddingRight={100}>
                             <Fade bottom ssrFadeout>
-                                <P2>Valtech believes in transparency in how we operate. Check out the list of tools we use to perform our services:</P2>
+                                <P2>Coopa LLC believes in transparency in how we operate. Check out the list of tools we use to perform our services:</P2>
                             </Fade>
                             <Fade delay={1000} ssrFadeout>
                                 <Flex wrap={"wrap"} justify={'space-between'} align={'center'}>

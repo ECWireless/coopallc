@@ -38,45 +38,6 @@ const Contact = () => {
     }
     // function onMessageChange(e) { setMessage(e.target.value) }
 
-    // function onSubmit(e) {
-    //     e.preventDefault();
-    //     console.log('submit')
-    //     let state = {
-    //         name,
-    //         email,
-    //         number,
-    //         message,
-    //     }
-        
-    //     setLoading(true)
-    //     fetch('https://valtechcreative-backend.herokuapp.com/mail',{
-    //         method: "POST",
-    //         body: JSON.stringify(state),
-    //         headers: {
-    //             'Accept': 'application/json',
-    //             'Content-Type': 'application/json'
-    //         },
-    //     }).then(
-    //         (response) => (response.json())
-    //     ).then((response)=>{
-    //         if (response.status === 'success'){
-    //             resetForm();
-    //             setSubmitted(true)
-    //             setSuccess(true)
-    //             setLoading(false)
-    //         } else if(response.status === 'fail'){
-    //             setSubmitted(true)
-    //             setSuccess(false)
-    //             setLoading(false)
-    //         }
-    //     })
-    //     .catch(() => {
-    //         setSubmitted(true)
-    //         setSuccess(false)
-    //         setLoading(false)
-    //     })
-    // }
-
     // function onCloseSnackbar() {
     //     setSubmitted(false)
     // }

@@ -14,20 +14,14 @@ const Footer = (props) => {
                 <Box paddingTop={100} paddingBottom={100}>
                     <Container>
                         <Flex align={'center'} justify={'space-around'} wrap={'wrap'}>
-                            <FooterIcon onClick={props.scrollToTop} style={{backgroundImage: 'url(./Valtech-Logo.png)'}} />
+                            <FooterIcon onClick={props.scrollToTop} style={{backgroundImage: 'url(./coopa-Logo.png)'}} />
                             <CustomLink
                                 href="https://github.com/ecwireless"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FooterIcon style={{backgroundImage: 'url(./github-logo-invert.png)'}} />
                             </CustomLink>
-                            <CustomLink
-                                href="https://www.facebook.com/valtechcreative"
-                                target="_blank" rel="noreferrer"
-                            >
-                                <FooterIcon style={{backgroundImage: 'url(./facebook-logo-white.png)'}} />
-                            </CustomLink>
-                            <P2>Elliott@ValtechCreative.com</P2>
+                            <P2>Elliott@coopallc.com</P2>
                         </Flex>
                     </Container>
                 </Box>

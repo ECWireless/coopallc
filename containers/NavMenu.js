@@ -25,10 +25,10 @@ const NavMenu = (props) => {
                                         <NavBarTop>
                                             <NavTopFlex>
                                                 <Link href="/">
-                                                    <NavValtech onClick={() => props.setClosed(true)} style={{backgroundImage: 'url(./Valtech-Logo.png)'}} />
+                                                    <NavCoopa onClick={() => props.setClosed(true)} style={{backgroundImage: 'url(./coopa-Logo.png)'}} />
                                                 </Link>
                                                 <Link href="/">
-                                                    <P2 onClick={() => props.setClosed(true)} color={'blue'}>Valtech Creative</P2>
+                                                    <P2 onClick={() => props.setClosed(true)} color={'blue'}>Coopa LLC</P2>
                                                 </Link>
                                             </NavTopFlex>
                                         </NavBarTop>
@@ -80,16 +80,8 @@ const NavMenu = (props) => {
                                                     <NavIcon style={{backgroundImage: 'url(./github-logo.png)'}} />
                                                 </CustomLink>
                                             </Box>
-                                            <Box marginLeft={20}>
-                                                <CustomLink
-                                                    href="https://www.facebook.com/valtechcreative"
-                                                    target="_blank" rel="noreferrer"
-                                                >
-                                                    <NavIcon style={{backgroundImage: 'url(./facebook-logo.png)'}} />
-                                                </CustomLink>
-                                            </Box>
                                             <Box marginLeft={40}>
-                                                <P2 color={'#000'}>Elliott@ValtechCreative.com</P2>
+                                                <P2 color={'#000'}>Elliott@coopallc.com</P2>
                                             </Box>
                                         </Flex>
                                     </NavBarBottom>
@@ -321,7 +313,7 @@ const NavTopFlex = styled.div`
     `}
 `
 
-const NavValtech = styled.div`
+const NavCoopa = styled.div`
     ${props => css`
         width: 30px;
         height: 30px;

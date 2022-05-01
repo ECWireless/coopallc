@@ -68,14 +68,6 @@ const Hero = () => {
                             <HeroIcon style={{backgroundImage: 'url(./github-logo-invert.png)'}} />
                         </CustomLink>
                     </Box>
-                    <Box marginTop={60}>
-                        <CustomLink
-                            href="https://www.facebook.com/valtechcreative"
-                            target="_blank" rel="noreferrer"
-                        >
-                            <HeroIcon style={{backgroundImage: 'url(./facebook-logo-white.png)'}} />
-                        </CustomLink>
-                    </Box>
                 </Flex>
             </Container>
         </>

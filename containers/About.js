@@ -15,14 +15,14 @@ const About = () => {
                         <Fade delay={1000} ssrFadeout>
                             <Line width={50} height={5} color={'yellow'} />
                         </Fade>
-                        <H1 color={'#FFF'} align={'center'}>How Valtech Works</H1>
+                        <H1 color={'#FFF'} align={'center'}>How Coopa LLC Works</H1>
                         <Fade delay={1000} ssrFadeout>
                             <Line width={50} height={5} color={'yellow'} />
                         </Fade>
                     </Flex>
                     <Fade bottom ssrFadeout>
                         <Box marginTop={100}>
-                            <H2>Valtech is a distributed company built around collaboration.</H2>
+                            <H2>Coopa LLC is a distributed company built around collaboration.</H2>
                         </Box>
                     </Fade>
                     <Fade bottom ssrFadeout>
@@ -32,7 +32,7 @@ const About = () => {
                     </Fade>
                     <Fade bottom ssrFadeout>
                         <Box marginTop={30}>
-                            <P2>Valtech is co-owned and co-managed by all of its collaborators on Github.</P2>
+                            <P2>Coopa LLC is co-owned and co-managed by all of its collaborators on Github.</P2>
                         </Box>
                     </Fade>
                     <Fade bottom ssrFadeout>

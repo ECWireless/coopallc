@@ -7,7 +7,7 @@ export default async function(req, res) {
 
   const clientEmail = {
     to: email,
-    from: 'Elliott@valtechcreative.com',
+    from: 'Elliott@coopallc.com',
     subject: `Submission was successful!`,
     html: `
       <p>Thank you for contacting us! A developer will be in touch shortly.</p>
@@ -16,8 +16,8 @@ export default async function(req, res) {
   }
 
   const userEmail = {
-    to: 'Elliott@valtechcreative.com',
-    from: 'Elliott@valtechcreative.com',
+    to: 'Elliott@coopallc.com',
+    from: 'Elliott@coopallc.com',
     subject: `New Subscription Message From - ${name}`,
     html: `<p>New subscription preference message from ${email}: ${subscription}</p>`
   }
