@@ -43,9 +43,10 @@ const Hero = () => {
             />
             <Container>
                 <Box width={800} marginTop={150}>
-                    <H1>A Collaborative Agency for UX/UI Design</H1>
+                    <H1>Coopa LLC</H1>
+                    {/* <H1>A Collaborative Agency for UX/UI Design</H1> */}
                 </Box>
-                <Flex>
+                {/* <Flex>
                     <Box marginTop={60}>
                         <H2 id="hero__heading2">Based in...</H2>
                     </Box>
@@ -55,9 +56,9 @@ const Hero = () => {
                             items={['Los Angeles', 'Pittsburgh', 'Amsterdam', 'Boulder', 'Anywhere']}
                         /></H2>
                     </Box>
-                </Flex>
+                </Flex> */}
                 <Box marginTop={60}>
-                    <P1 id="hero__paragraph1">Specializing in custom Websites, Web Apps, and Native Applications.</P1>
+                    <P1 id="hero__paragraph1">A Collaborative Agency for UX/UI Design. Specializing in custom Websites, Web Apps, and Native Applications.</P1>
                 </Box>
                 <Flex>
                     <Box marginTop={60} marginRight={30}>

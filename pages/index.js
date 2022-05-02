@@ -59,13 +59,13 @@ const index = () => {
             </Head>
             <main>
                 <Backdrop open={sidebar || model} onClick={onCloseAll} />
-                <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
-                <NavBar setSidebar={setSidebar} />
+                {/* <Sidebar sidebar={sidebar} setSidebar={setSidebar} /> */}
+                {/* <NavBar setSidebar={setSidebar} /> */}
                 {model && <Model onCloseAll={onCloseAll} />}
                 {/* {!closed && <NavMenu setSidebar={setSidebar} />} */}
                 <Hero />
                 <HashTransforms id="subscriptions" transform={50} />
-                <Subscriptions setModel={setModel} />
+                {/* <Subscriptions setModel={setModel} /> */}
                 <Box marginTop={350}>
                     <Background1>
                         <HashTransforms id="features" transform={-100} />
@@ -75,15 +75,15 @@ const index = () => {
                     </Background1>
                 </Box>
                 <HashTransforms id="about" transform={0} />
-                <About />
-                <Box marginTop={350}>
+                {/* <About /> */}
+                {/* <Box marginTop={350}>
                     <Background2>
                         <HashTransforms id="tools" transform={-200} />
                         <Tools />
                         <HashTransforms id="contact" transform={-100} />
                         <Contact />
                     </Background2>
-                </Box>
+                </Box> */}
                 <Footer scrollToTop={scrollToTop} />
             </main>
         </>
