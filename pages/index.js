@@ -76,14 +76,14 @@ const index = () => {
                 </Box>
                 <HashTransforms id="about" transform={0} />
                 {/* <About /> */}
-                {/* <Box marginTop={350}>
+                <Box marginTop={350}>
                     <Background2>
                         <HashTransforms id="tools" transform={-200} />
                         <Tools />
                         <HashTransforms id="contact" transform={-100} />
                         <Contact />
                     </Background2>
-                </Box> */}
+                </Box>
                 <Footer scrollToTop={scrollToTop} />
             </main>
         </>
