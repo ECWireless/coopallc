@@ -14,7 +14,7 @@ const Footer = (props) => {
                 <Box paddingTop={100} paddingBottom={100}>
                     <Container>
                         <Flex align={'center'} justify={'space-around'} wrap={'wrap'}>
-                            <FooterIcon onClick={props.scrollToTop} style={{backgroundImage: 'url(./coopa-Logo.png)'}} />
+                            <FooterIcon onClick={props.scrollToTop} style={{backgroundImage: 'url(./Coopa-Logo.png)'}} />
                             <CustomLink
                                 href="https://github.com/ecwireless"
                                 target="_blank" rel="noreferrer"
