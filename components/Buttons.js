@@ -1,30 +1,30 @@
-import styled, { css } from 'styled-components'
-import respondTo from './Breakpoints'
+import styled, { css } from 'styled-components';
+import respondTo from './Breakpoints';
 
 export const Button = styled.button`
-    height: 50px;
-    margin: 0 auto;
-    background-color: #fff;
-    border: 1px solid #1062AD;
-    outline: none;
-    color: #1062AD;
-    border-radius: 5px;
-    transition: all .5s ease;
-    padding: 0 2rem;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #1062ad;
+  outline: none;
+  color: #1062ad;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  padding: 0 2rem;
 
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-        box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
-        background-color: #1062AD;
-        color: #FFF;
-    }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    background-color: #1062ad;
+    color: #fff;
+  }
 
-    ${respondTo.sm`
+  ${respondTo.sm`
         font-size: 18px;
     `}
 
-    ${respondTo.md`
+  ${respondTo.md`
         font-size: 20px;
     `}
 
@@ -32,32 +32,34 @@ export const Button = styled.button`
         font-size: 24px;
     `}
 
-    ${props => props.uppercase && css`
-        text-transform: uppercase;
+    ${props =>
+    props.uppercase &&
+    css`
+      text-transform: uppercase;
     `};
 
-    ${props =>
-        css`
-            margin-top: ${props.marginTop * .4}px;
-            margin-bottom: ${props.marginBottom * .4}px;
-            margin-left: ${props.marginLeft * .4}px;
-            padding-left: ${props.paddingLeft * .4}px;
-            padding-right: ${props.paddingRight * .4}px;
+  ${props =>
+    css`
+      margin-top: ${props.marginTop * 0.4}px;
+      margin-bottom: ${props.marginBottom * 0.4}px;
+      margin-left: ${props.marginLeft * 0.4}px;
+      padding-left: ${props.paddingLeft * 0.4}px;
+      padding-right: ${props.paddingRight * 0.4}px;
 
-            ${respondTo.xs`
-                margin-top: ${props.marginTop * .45}px;
-                margin-bottom: ${props.marginBottom * .45}px;
-                margin-left: ${props.marginLeft * .45}px;
-                padding-left: ${props.paddingLeft * .45}px;
-                padding-right: ${props.paddingRight * .45}px;
+      ${respondTo.xs`
+                margin-top: ${props.marginTop * 0.45}px;
+                margin-bottom: ${props.marginBottom * 0.45}px;
+                margin-left: ${props.marginLeft * 0.45}px;
+                padding-left: ${props.paddingLeft * 0.45}px;
+                padding-right: ${props.paddingRight * 0.45}px;
             `}
-            
-            ${respondTo.sm`
-                margin-top: ${props.marginTop * .7}px;
-                margin-bottom: ${props.marginBottom * .7}px;
-                margin-left: ${props.marginLeft * .7}px;
-                padding-left: ${props.paddingLeft * .7}px;
-                padding-right: ${props.paddingRight * .7}px;
+
+      ${respondTo.sm`
+                margin-top: ${props.marginTop * 0.7}px;
+                margin-bottom: ${props.marginBottom * 0.7}px;
+                margin-left: ${props.marginLeft * 0.7}px;
+                padding-left: ${props.paddingLeft * 0.7}px;
+                padding-right: ${props.paddingRight * 0.7}px;
             `}
 
             ${respondTo.md`
@@ -70,5 +72,5 @@ export const Button = styled.button`
 
             ${respondTo.lg`
             `}
-        `};
-`
+    `};
+`;

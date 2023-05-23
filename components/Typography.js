@@ -1,17 +1,17 @@
-import styled, { css } from 'styled-components'
-import respondTo from './Breakpoints'
+import styled, { css } from 'styled-components';
+import respondTo from './Breakpoints';
 
 export const H1 = styled.h1`
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    color: #FAF30E;
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: #faf30e;
 
-    ${respondTo.xs`
+  ${respondTo.xs`
         font-size: 40px;
     `}
-    
-    ${respondTo.sm`
+
+  ${respondTo.sm`
         font-size: 45px;
     `}
 
@@ -23,35 +23,41 @@ export const H1 = styled.h1`
         font-size: 65px;
 	`}
 
-    ${props => props.uppercase && css`
-        text-transform: uppercase;
+    ${props =>
+    props.uppercase &&
+    css`
+      text-transform: uppercase;
     `};
 
-    ${props => props.center && css`
-        text-align: center;
+  ${props =>
+    props.center &&
+    css`
+      text-align: center;
     `};
 
-    ${props => props.color && css`
-        color: ${props.color}
+  ${props =>
+    props.color &&
+    css`
+      color: ${props.color};
     `};
 
-    ${props => css`
-        text-align: ${props.align};
-        color: ${props.color};
-    `};
-`
+  ${props => css`
+    text-align: ${props.align};
+    color: ${props.color};
+  `};
+`;
 
 export const H2 = styled.h2`
-    font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    color: #FAF30E;
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: #faf30e;
 
-    ${respondTo.xs`
+  ${respondTo.xs`
         font-size: 26px;
     `}
-    
-    ${respondTo.sm`
+
+  ${respondTo.sm`
         font-size: 34px;
     `}
 
@@ -63,34 +69,40 @@ export const H2 = styled.h2`
         font-size: 50px;
 	`}
 
-    ${props => props.uppercase && css`
-        text-transform: uppercase;
+    ${props =>
+    props.uppercase &&
+    css`
+      text-transform: uppercase;
     `};
 
-    ${props => props.center && css`
-        text-align: center;
+  ${props =>
+    props.center &&
+    css`
+      text-align: center;
     `};
 
-    ${props => props.color && css`
-        color: ${props.color}
+  ${props =>
+    props.color &&
+    css`
+      color: ${props.color};
     `};
 
-    ${props => css`
-        text-align: ${props.align};
-    `};
-`
+  ${props => css`
+    text-align: ${props.align};
+  `};
+`;
 
 export const H3 = styled.h3`
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    color: #FFF;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: #fff;
 
-    ${respondTo.xs`
+  ${respondTo.xs`
         font-size: 22px;
     `}
-    
-    ${respondTo.sm`
+
+  ${respondTo.sm`
         font-size: 30px;
     `}
 
@@ -102,34 +114,40 @@ export const H3 = styled.h3`
         font-size: 45px;
 	`}
 
-    ${props => props.uppercase && css`
-        text-transform: uppercase;
+    ${props =>
+    props.uppercase &&
+    css`
+      text-transform: uppercase;
     `};
 
-    ${props => props.center && css`
-        text-align: center;
+  ${props =>
+    props.center &&
+    css`
+      text-align: center;
     `};
 
-    ${props => props.color && css`
-        color: ${props.color}
+  ${props =>
+    props.color &&
+    css`
+      color: ${props.color};
     `};
 
-    ${props => css`
-        text-align: ${props.align};
-    `};
-`
+  ${props => css`
+    text-align: ${props.align};
+  `};
+`;
 
 export const H4 = styled.h3`
-    font-size: 22px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    color: #FFF;
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: #fff;
 
-    ${respondTo.xs`
+  ${respondTo.xs`
         font-size: 24px;
     `}
-    
-    ${respondTo.sm`
+
+  ${respondTo.sm`
         font-size: 28px;
     `}
 
@@ -141,34 +159,40 @@ export const H4 = styled.h3`
         font-size: 38px;
 	`}
 
-    ${props => props.uppercase && css`
-        text-transform: uppercase;
+    ${props =>
+    props.uppercase &&
+    css`
+      text-transform: uppercase;
     `};
 
-    ${props => props.center && css`
-        text-align: center;
+  ${props =>
+    props.center &&
+    css`
+      text-align: center;
     `};
 
-    ${props => props.color && css`
-        color: ${props.color}
+  ${props =>
+    props.color &&
+    css`
+      color: ${props.color};
     `};
 
-    ${props => css`
-        text-align: ${props.align};
-    `};
-`
+  ${props => css`
+    text-align: ${props.align};
+  `};
+`;
 
 export const P1 = styled.p`
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: #fff;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #fff;
 
-    ${respondTo.xs`
+  ${respondTo.xs`
         font-size: 22px;
     `}
 
-    ${respondTo.sm`
+  ${respondTo.sm`
         font-weight: 400;
         font-size: 30px;
     `}
@@ -181,40 +205,48 @@ export const P1 = styled.p`
         font-size: 46px;
     `}
 
-    ${props => props.uppercase && css`
-        text-transform: uppercase;
+    ${props =>
+    props.uppercase &&
+    css`
+      text-transform: uppercase;
     `};
 
-    ${props => css`
-        text-align: ${props.align};
-        color: ${props.color};
+  ${props => css`
+    text-align: ${props.align};
+    color: ${props.color};
+  `};
+
+  ${props =>
+    props.center &&
+    css`
+      text-align: center;
     `};
 
-    ${props => props.center && css`
-        text-align: center;
+  ${props =>
+    props.color &&
+    css`
+      color: ${props.color};
     `};
 
-    ${props => props.color && css`
-        color: ${props.color}
+  ${props =>
+    props.color === 'blue' &&
+    css`
+      color: #1062ad;
     `};
-
-    ${props => props.color === 'blue' && css`
-        color: #1062AD;
-    `};
-`
+`;
 
 export const P2 = styled.p`
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: #fff;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #fff;
 
-    ${respondTo.sm`
+  ${respondTo.sm`
     font-weight: 400;
         font-size: 18px;
     `}
 
-    ${respondTo.md`
+  ${respondTo.md`
         font-size: 20px;
     `}
 
@@ -222,40 +254,48 @@ export const P2 = styled.p`
         font-size: 24px;
     `}
 
-    ${props => props.uppercase && css`
-        text-transform: uppercase;
+    ${props =>
+    props.uppercase &&
+    css`
+      text-transform: uppercase;
     `};
 
-    ${props => css`
-        text-align: ${props.align};
-        color: ${props.color};
+  ${props => css`
+    text-align: ${props.align};
+    color: ${props.color};
+  `};
+
+  ${props =>
+    props.center &&
+    css`
+      text-align: center;
     `};
 
-    ${props => props.center && css`
-        text-align: center;
+  ${props =>
+    props.color &&
+    css`
+      color: ${props.color};
     `};
 
-    ${props => props.color && css`
-        color: ${props.color}
+  ${props =>
+    props.color === 'blue' &&
+    css`
+      color: #1062ad;
     `};
-
-    ${props => props.color === 'blue' && css`
-        color: #1062AD;
-    `};
-`
+`;
 
 export const P3 = styled.p`
-    font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: #fff;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #fff;
 
-    ${respondTo.sm`
+  ${respondTo.sm`
         font-weight: 400;
         font-size: 16px;
     `}
 
-    ${respondTo.md`
+  ${respondTo.md`
         font-size: 18px;
     `}
 
@@ -263,23 +303,33 @@ export const P3 = styled.p`
         font-size: 20px;
     `}
 
-    ${props => props.uppercase && css`
-        text-transform: uppercase;
+    ${props =>
+    props.uppercase &&
+    css`
+      text-transform: uppercase;
     `};
 
-    ${props => props.bold && css`
-        font-weight: bold !important;
+  ${props =>
+    props.bold &&
+    css`
+      font-weight: bold !important;
     `};
 
-    ${props => props.center && css`
-        text-align: center;
+  ${props =>
+    props.center &&
+    css`
+      text-align: center;
     `};
 
-    ${props => props.color && css`
-        color: ${props.color}
+  ${props =>
+    props.color &&
+    css`
+      color: ${props.color};
     `};
 
-    ${props => props.color === 'blue' && css`
-        color: #1062AD;
+  ${props =>
+    props.color === 'blue' &&
+    css`
+      color: #1062ad;
     `};
-`
+`;

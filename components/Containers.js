@@ -1,16 +1,16 @@
-import styled, { css } from 'styled-components'
-import respondTo from './Breakpoints'
+import styled, { css } from 'styled-components';
+import respondTo from './Breakpoints';
 
 export const Container = styled.div`
-    position: relative;
-    width: 280px;
-    margin: auto;
+  position: relative;
+  width: 280px;
+  margin: auto;
 
-    ${respondTo.xs`
+  ${respondTo.xs`
         width: 300px;
     `}
-    
-    ${respondTo.sm`
+
+  ${respondTo.sm`
         width: 600px;
     `}
 
@@ -21,17 +21,17 @@ export const Container = styled.div`
     ${respondTo.lg`
         width: 1000px;
     `}
-`
+`;
 
 export const Col2 = styled.div`
-    ${props => css`
-        display: flex;
-        flex-direction: column;
+  ${props => css`
+    display: flex;
+    flex-direction: column;
 
-        ${respondTo.xs`
+    ${respondTo.xs`
         `}
-        
-        ${respondTo.sm`
+
+    ${respondTo.sm`
         `}
 
         ${respondTo.md`
@@ -42,20 +42,20 @@ export const Col2 = styled.div`
 
         ${respondTo.lg`
         `}
-    `}
-`
+  `}
+`;
 
 export const Col2Left = styled.div`
-    ${props => css`
-        display: flex;
-        flex-direction: column;
-        align-items: ${props.align};
-        justify-content: ${props.justify};
+  ${props => css`
+    display: flex;
+    flex-direction: column;
+    align-items: ${props.align};
+    justify-content: ${props.justify};
 
-        ${respondTo.xs`
+    ${respondTo.xs`
         `}
-        
-        ${respondTo.sm`
+
+    ${respondTo.sm`
         `}
 
         ${respondTo.md`
@@ -64,28 +64,28 @@ export const Col2Left = styled.div`
 
         ${respondTo.lg`
         `}
-    `}
-`
+  `}
+`;
 
 export const Col2Right = styled.div`
-    grid-column: 2 / 3;
-    display: flex;
-    flex-direction: column;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
 
-    ${props => css`
-        align-items: ${props.align};
-        justify-content: ${props.justify};
-    `}
-`
+  ${props => css`
+    align-items: ${props.align};
+    justify-content: ${props.justify};
+  `}
+`;
 
 export const Flex = styled.div`
-    display: flex;
+  display: flex;
 
-    ${props => css`
-        justify-content: ${props.justify};
-        align-items: ${props.align};
-        flex-wrap: ${props.wrap};
-        flex-direction: ${props.direction};
-        height: ${props.height};
-    `}
-`
+  ${props => css`
+    justify-content: ${props.justify};
+    align-items: ${props.align};
+    flex-wrap: ${props.wrap};
+    flex-direction: ${props.direction};
+    height: ${props.height};
+  `}
+`;
