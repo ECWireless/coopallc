@@ -1,78 +1,103 @@
 import styled from 'styled-components'
 import respondTo from '../components/Breakpoints'
-import Particles from 'react-particles-js'
-import ReactRotatingText from 'react-rotating-text'
+import Particles from 'react-tsparticles'
+import { loadFull } from "tsparticles";
+import { useCallback } from "react";
 
 // Components
 import { CustomLink } from '../components'
 import { Box } from '../components/Boxes'
-import { H1, H2, P1 } from '../components/Typography'
+import { H1, P1 } from '../components/Typography'
 import { Container, Flex } from '../components/Containers'
-import LocationIcon from '../components/LocationIcon'
 
 const Hero = () => {
+	const particlesInit = useCallback(async engine => {
+		console.log(engine);
+		// you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+		// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+		// starting from v2 you can add only the features you need reducing the bundle size
+		await loadFull(engine);
+	}, []);
+
+	const particlesLoaded = useCallback(async container => {
+		console.log(container);
+	}, []);
+
     return (
-        <>
-            <Particles
-                id="particles"
-                params={{
-                    "particles": {
-                        "number": {
-                            "value": 100
-                        },
-                        "size": {
-                            "value": 3
-                        },
-                        "color": {
-                            "value": "#1263AD"
-                        },
-                        "line_linked": {
-                            "enable": true,
-                            "color": "#1263AD"
-                        },
-                    },
-                    "interactivity": {
-                        "events": {
-                            "onhover": {
-                                "enable": true,
-                                "mode": "repulse"
-                            }
-                        }
-                    }
-                }}
-            />
-            <Container>
-                <Box width={800} marginTop={150}>
-                    <H1>Coopa LLC</H1>
-                    {/* <H1>A Collaborative Agency for UX/UI Design</H1> */}
-                </Box>
-                {/* <Flex>
-                    <Box marginTop={60}>
-                        <H2 id="hero__heading2">Based in...</H2>
-                    </Box>
-                        <LocationIcon />
-                    <Box marginTop={60}>
-                        <H2 id="hero__location"><ReactRotatingText
-                            items={['Los Angeles', 'Pittsburgh', 'Amsterdam', 'Boulder', 'Anywhere']}
-                        /></H2>
-                    </Box>
-                </Flex> */}
-                <Box marginTop={60}>
-                    <P1 id="hero__paragraph1">A Collaborative Agency for UX/UI Design. Specializing in custom Websites, Web Apps, and Native Applications.</P1>
-                </Box>
-                <Flex>
-                    <Box marginTop={60} marginRight={30}>
-                        <CustomLink
-                            href="https://github.com/ecwireless"
-                            target="_blank" rel="noreferrer"
-                        >
-                            <HeroIcon style={{backgroundImage: 'url(./github-logo-invert.png)'}} />
-                        </CustomLink>
-                    </Box>
-                </Flex>
-            </Container>
-        </>
-    )
+			<>
+				<Particles
+					id="tsparticles"
+					options={{
+						"particles": {
+								"number": {
+										"value": 100
+								},
+								"size": {
+										"value": 3
+								},
+								"color": {
+										"value": "#1263AD"
+								},
+								"line_linked": {
+										"enable": true,
+										"color": "#1263AD"
+								},
+								"move": {
+									directions: "none",
+									enable: true,
+									outModes: {
+											default: "bounce",
+									},
+									random: false,
+									speed: .3,
+									straight: false,
+								},
+						},
+						"interactivity": {
+								"events": {
+										"onhover": {
+												"enable": true,
+												"mode": "repulse"
+										}
+								}
+							}
+						}
+					}
+					init={particlesInit}
+					loaded={particlesLoaded}
+				/>
+				<Container>
+					<Box width={800} marginTop={150}>
+							<H1>Coopa LLC</H1>
+							{/* <H1>A Collaborative Agency for UX/UI Design</H1> */}
+					</Box>
+					{/* <Flex>
+							<Box marginTop={60}>
+									<H2 id="hero__heading2">Based in...</H2>
+							</Box>
+									<LocationIcon />
+							<Box marginTop={60}>
+									<H2 id="hero__location"><ReactRotatingText
+											items={['Los Angeles', 'Pittsburgh', 'Amsterdam', 'Boulder', 'Anywhere']}
+									/></H2>
+							</Box>
+					</Flex> */}
+					<Box marginTop={60}>
+							<P1 id="hero__paragraph1">A Collaborative Agency for UX/UI Design. Specializing in custom Websites, Web Apps, and Native Applications.</P1>
+					</Box>
+					<Flex>
+							<Box marginTop={60} marginRight={30}>
+									<CustomLink
+											href="https://github.com/ecwireless"
+											target="_blank" rel="noreferrer"
+									>
+											<HeroIcon style={{backgroundImage: 'url(./github-logo-invert.png)'}} />
+									</CustomLink>
+							</Box>
+					</Flex>
+			</Container>
+		</>
+	)
 }
 
 const HeroIcon = styled.div`

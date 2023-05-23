@@ -34,14 +34,14 @@ export default class MyDocument extends Document {
         <Head>
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-111622721-4" >
+            src="https://www.googletagmanager.com/gtag/js?id=G-69HHDM2XQQ" >
         </script>
         <script dangerouslySetInnerHTML={
             { __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){window.dataLayer.push(arguments)}
                 gtag("js", new Date());
-                gtag("config", "UA-111622721-4");
+                gtag("config", "G-69HHDM2XQQ");
             `}
         }>
         </script>
