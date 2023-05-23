@@ -26,7 +26,7 @@ const Hero = () => {
     return (
 			<>
 				<Particles
-					id="tsparticles"
+					id="particles"
 					options={{
 						"particles": {
 								"number": {
@@ -52,15 +52,7 @@ const Hero = () => {
 									speed: .3,
 									straight: false,
 								},
-						},
-						"interactivity": {
-								"events": {
-										"onhover": {
-												"enable": true,
-												"mode": "repulse"
-										}
-								}
-							}
+							},
 						}
 					}
 					init={particlesInit}
