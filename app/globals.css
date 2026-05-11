@@ -1,0 +1,157 @@
+:root {
+  --black: #050608;
+  --ink: #f7f8ff;
+  --muted: #9aa6b2;
+  --blue: #1263ad;
+  --yellow: #faf30e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--black);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(
+      circle at 18% 20%,
+      rgb(18 99 173 / 0.18),
+      transparent 28rem
+    ),
+    linear-gradient(135deg, #050608 0%, #0a0d12 58%, #050608 100%);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2rem;
+}
+
+.calling-card {
+  width: min(100%, 56rem);
+}
+
+.mark {
+  display: flex;
+  gap: 0.45rem;
+  margin-bottom: 2.25rem;
+}
+
+.mark span {
+  display: block;
+  height: 0.35rem;
+  border-radius: 999px;
+}
+
+.mark span:first-child {
+  width: 3.5rem;
+  background: var(--blue);
+}
+
+.mark span:last-child {
+  width: 1.4rem;
+  background: var(--yellow);
+}
+
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(3.8rem, 11vw, 7.5rem);
+  font-weight: 800;
+  line-height: 0.86;
+}
+
+.tagline {
+  max-width: 31rem;
+  margin: 1.35rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 3vw, 1.45rem);
+  line-height: 1.45;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2.4rem;
+}
+
+.links a,
+.email {
+  position: relative;
+  border: 1px solid rgb(247 248 255 / 0.13);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.035);
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.links a {
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.links a:hover,
+.email:hover {
+  border-color: rgb(250 243 14 / 0.75);
+  background: rgb(18 99 173 / 0.22);
+  color: var(--yellow);
+  transform: translateY(-2px);
+}
+
+.links a:focus-visible,
+.email:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 4px;
+}
+
+.email {
+  display: inline-flex;
+  margin-top: 0.9rem;
+  padding: 0.72rem 0.9rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 520px) {
+  .page-shell {
+    place-items: end start;
+    padding: 1.35rem;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .links a,
+  .email {
+    justify-content: center;
+    text-align: center;
+  }
+}

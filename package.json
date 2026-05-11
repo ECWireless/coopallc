@@ -1,13 +1,13 @@
 {
   "name": "coopallc",
-  "version": "1.0.0",
-  "description": "New website for coopallc.com",
-  "main": "index.js",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Quiet internet calling card for Coopa LLC.",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write \"{*,**/*}.{ts,tsx,js,jsx,json,yml,yaml,md}\""
+    "format": "prettier --write \"app/**/*.{ts,tsx,css}\" \"*.{json,md}\""
   },
   "repository": {
     "type": "git",
@@ -20,21 +20,16 @@
   },
   "homepage": "https://github.com/ECWireless/coopallc#readme",
   "dependencies": {
-    "@sendgrid/mail": "^7.2.5",
-    "axios": "^0.21.1",
-    "babel-plugin-styled-components": "^1.10.7",
-    "next": "^10.0.8",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-reveal": "^1.2.2",
-    "react-rotating-text": "^1.4.1",
-    "react-tsparticles": "^2.9.3",
-    "scroll-behavior-polyfill": "^2.0.13",
-    "smoothscroll-polyfill": "^0.4.4",
-    "styled-components": "^5.1.1",
-    "tsparticles": "^2.9.3"
+    "@vercel/analytics": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
   }
 }
