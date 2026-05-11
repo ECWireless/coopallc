@@ -29,7 +29,7 @@ export default function Home() {
               key={link.href}
               href={link.href}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               {link.label}
             </a>
